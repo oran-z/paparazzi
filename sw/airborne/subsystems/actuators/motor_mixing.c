@@ -28,7 +28,6 @@
 #include "subsystems/actuators/motor_mixing.h"
 #include "paparazzi.h"
 
-//#include <stdint.h>
 #ifndef INT32_MIN
 #define INT32_MIN (-2147483647-1)
 #endif
@@ -79,11 +78,6 @@
 #ifndef MOTOR_MIXING_MAX_NEGATIVE_MOTOR_STEP
 #define MOTOR_MIXING_MAX_NEGATIVE_MOTOR_STEP INT32_MIN
 #endif
-/*
-#ifndef MOTOR_MIXING_MAX_POSITIVE_MOTOR_STEP
-#define MOTOR_MIXING_MAX_POSITIVE_MOTOR_STEP INT32_MAX
-#endif
-*/
 #endif
 
 static const int32_t roll_coef[MOTOR_MIXING_NB_MOTOR]   = MOTOR_MIXING_ROLL_COEF;
